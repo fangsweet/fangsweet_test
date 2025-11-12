@@ -389,6 +389,7 @@ a:hover {
     margin-bottom: 25px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     color: #fff;
+    white-space: nowrap;
 }
 
 .hero-text p {
