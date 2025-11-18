@@ -255,6 +255,16 @@ a:hover {
     color: var(--primary-color-darker);
 }
 
+.language-switcher::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: var(--border-color);
+    margin: 0 15px; /* 左右間距 */
+    align-self: center; /* 確保垂直居中 */
+}
+
 .language-switcher .lang-link {
     color: var(--primary-color);
     font-weight: 600;
