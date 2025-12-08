@@ -272,7 +272,7 @@ a:hover {
 }
 
 .language-switcher .lang-link {
-    color: var(--primary-color);
+    color: var(--secondary-color); /* 改為灰色 */
     font-weight: 600;
     padding: 8px 10px;
     border-radius: 5px;
@@ -282,7 +282,7 @@ a:hover {
 
 .language-switcher .lang-link:hover {
     background-color: var(--light-bg);
-    color: var(--primary-color-darker);
+    color: var(--primary-color); /* hover 時變為主色 */
 }
 
 /* 導航子選單 */
@@ -1490,3 +1490,4 @@ img {
     max-width: 100%;
     height: auto;
 }
+
