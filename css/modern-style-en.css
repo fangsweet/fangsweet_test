@@ -1295,17 +1295,17 @@ a:hover {
     }
  
     .logo-link {
-    max-width: calc(100% - 80px); /* 給漢堡按鈕更多空間 */
+    max-width: calc(100% - 60px); /* 給漢堡按鈕更多空間 */
 }
 
     .logo-img {
-        height: 45px;
-        margin-right: 8px;
+        height: 40px;
+        margin-right: 6px;
     }
     
     /* 英文版：縮小字體但保留全名 */
     .company-name-zh {
-        font-size: 0.9rem; /* 縮小中文名稱 */
+        font-size: 0.8rem; /* 縮小中文名稱 */
         line-height: 1.1;
     }
     
