@@ -171,6 +171,7 @@ a:hover {
     flex-shrink: 1; 
     min-width: 0; 
     margin-right: 15px;
+    max-width: calc(100% - 70px);
 }
 
 .logo-img {
@@ -191,7 +192,8 @@ a:hover {
     justify-content: center;
     line-height: 1.2;
     min-width: 0;
-    /* 移除 overflow: hidden，讓文字可以完整顯示 */
+    flex: 1;
+    overflow: hidden;
 }
 
 .company-name-zh {
@@ -333,9 +335,10 @@ a:hover {
     border: none;
     padding: 5px;
     z-index: 1001;
-    margin-left: 15px;
+    margin-left: 20px;
     min-width: 44px;
     min-height: 44px;
+    flex-shrink: 0;
 }
 
 /* 疊加層 */
@@ -1290,7 +1293,11 @@ a:hover {
     .header .container {
         padding: 0 10px;
     }
-    
+ 
+    .logo-link {
+    max-width: calc(100% - 80px); /* 給漢堡按鈕更多空間 */
+}
+
     .logo-img {
         height: 45px;
         margin-right: 8px;
@@ -1298,18 +1305,20 @@ a:hover {
     
     /* 英文版：縮小字體但保留全名 */
     .company-name-zh {
-        font-size: 1.0rem; /* 縮小中文名稱 */
+        font-size: 0.9rem; /* 縮小中文名稱 */
+        line-height: 1.1;
     }
     
     .company-name-en {
         display: block; /* 顯示英文全名 */
         font-size: 0.7rem; /* 縮小英文全名 */
         opacity: 1;
+        line-height: 1.1;
     }
     
     .mobile-nav-toggle {
         font-size: 1.5rem;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     /* 手機版導航選單 */
@@ -1448,7 +1457,7 @@ a:hover {
 /* 超小手機尺寸 (420px 以下) */
 @media (max-width: 420px) {
     .logo-img {
-        height: 40px;
+        height: 38px;
         margin-right: 6px;
     }
     
